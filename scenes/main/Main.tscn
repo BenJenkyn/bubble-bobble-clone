@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dmvjfwlpaxm6w" path="res://scenes/entities/player/Player.tscn" id="1_u1xfj"]
 [ext_resource type="Texture2D" uid="uid://c34bb11vgwujr" path="res://assets/images/bg0.png" id="2_nha0i"]
+[ext_resource type="PackedScene" uid="uid://b4wg5nt0d4yvd" path="res://scenes/entities/enemies/Enemy.tscn" id="3_q24mn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nha0i"]
 texture = ExtResource("2_nha0i")
@@ -1554,3 +1555,12 @@ tile_set = SubResource("TileSet_q24mn")
 offset_right = 1151.0
 offset_bottom = 648.0
 texture = ExtResource("2_nha0i")
+
+[node name="Enemy" parent="." unique_id=1755366680 instance=ExtResource("3_q24mn")]
+position = Vector2(546, -13)
+
+[node name="Enemy2" parent="." unique_id=277923769 instance=ExtResource("3_q24mn")]
+position = Vector2(574, -132)
+
+[node name="Enemy3" parent="." unique_id=1344081981 instance=ExtResource("3_q24mn")]
+position = Vector2(582, -265)
