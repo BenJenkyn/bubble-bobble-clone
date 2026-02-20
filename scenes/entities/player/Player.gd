@@ -7,6 +7,9 @@ const JUMP_VELOCITY = -600.0
 var bubble_scene = preload("res://scenes/entities/projectiles/Bubble.tscn")
 var last_direction := 1
 
+func _ready() -> void:
+	add_to_group("player")
+
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -33,6 +36,6 @@ func _physics_process(delta: float) -> void:
 func shoot(direction):
 	var bubble = bubble_scene.instantiate()
 	bubble.position.y = position.y
-	bubble.position.x = position.x + direction * 50
+	bubble.position.x = position.x + direction * 70
 	bubble.dir = direction   # -1 for left, 1 for right
 	get_parent().add_child(bubble)
