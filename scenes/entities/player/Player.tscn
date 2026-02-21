@@ -16,3 +16,6 @@ shape = SubResource("RectangleShape2D_afppm")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2129089630]
 texture = ExtResource("2_afppm")
+
+[node name="InvulnerabilityTimer" type="Timer" parent="." unique_id=1086454564]
+one_shot = true
