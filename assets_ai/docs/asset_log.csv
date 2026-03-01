@@ -1,0 +1,15 @@
+asset_id,type,tool,prompt_summary,iterations,manual_edit_minutes,main_problems,godot_import_notes,final_path
+
+bubble.png,image,Gemini 3,Generated bubble sprite,1,0,Needed cropping and background removal,Imported successfully,assets_ai/proccessed/bubble.png
+enemy_walk_spritesheet.png,image,Gemini 3,Generated enemy walk animation,2,5,Needed cropping and background removal,Imported successfully,assets_ai/proccessed/enemy_walk_spritesheet.png
+heart_container.png,image,Gemini 3,Generated heart container icon,1,0,None,Imported successfully,assets_ai/proccessed/heart_container.png
+player_idle_animation.png,image,Gemini 3,Generated player idle animation,1,0,Needed cropping and background removal,Imported successfully,assets_ai/proccessed/player_idle_animation.png
+player_running_spritesheet.png,image,Gemini 3,Generated player running animation,2,5,Needed cropping and background removal,Imported successfully,assets_ai/proccessed/player_running_spritesheet.png
+background_image.png,image,Gemini 3,Generated background image,1,2,None,Imported successfully,assets_ai/raw/background_image.png
+bubble.mp3,music,Gemini 3,Generated bubble sound effect,1,0,Trouble Getting it to sound like a sound effect (It just kept generating music),Imported successfully,assets_ai/raw/bubble.mp3
+game_over_screen.png,image,Gemini 3,Generated game over screen,1,2,None,Imported successfully,assets_ai/raw/game_over_screen.png
+main_theme_song.mp3,music,Gemini 3,Generated main theme song,2,10,None,Imported successfully,assets_ai/raw/main_theme_song.mp3
+menu_screen.png,image,Gemini 3,Generated menu screen,1,2,None,Imported successfully,assets_ai/raw/menu_screen.png
+player_runnning_spritesheet.png,image,Gemini 3,Generated player running animation,2,5,Needed cropping and background removal,Imported successfully,assets_ai/raw/player_runnning_spritesheet.png
+tile_map.png,image,Gemini 3,Generated tile map,1,3,None,Imported successfully,assets_ai/raw/tile_map.png
+
