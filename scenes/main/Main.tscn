@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cyl7lkk3clb54" path="res://assets_ai/raw/tile_map.png" id="7_qkm1d"]
 [ext_resource type="Texture2D" uid="uid://w51k41ko1mfs" path="res://assets/images/space0.png" id="8_3km4f"]
 [ext_resource type="Texture2D" uid="uid://rsnppu2k4i4y" path="res://assets_ai/proccessed/heart_container.png" id="9_qkm1d"]
+[ext_resource type="AudioStream" uid="uid://cf7mnjsbkdwor" path="res://assets_ai/raw/main_theme_song.mp3" id="12_p5fgu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nha0i"]
 texture = ExtResource("2_nha0i")
@@ -5864,3 +5865,8 @@ texture = ExtResource("9_qkm1d")
 position = Vector2(174, 28)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("9_qkm1d")
+
+[node name="MainThemePlayer" type="AudioStreamPlayer2D" parent="." unique_id=95960292]
+stream = ExtResource("12_p5fgu")
+autoplay = true
+parameters/looping = true
