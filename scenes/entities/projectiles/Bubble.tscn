@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cgqtcn37use3e"]
 
 [ext_resource type="Script" uid="uid://pic1s37f56dv" path="res://scenes/entities/projectiles/Bubble.gd" id="1_5g3qy"]
-[ext_resource type="Texture2D" uid="uid://c31ki8s86ktj0" path="res://assets/images/orb6.png" id="2_i1kn5"]
+[ext_resource type="Texture2D" uid="uid://dss3l0uh2m2u1" path="res://assets_ai/proccessed/bubble.png" id="2_5g3qy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3mr5e"]
 radius = 36.05551
@@ -14,7 +14,9 @@ script = ExtResource("1_5g3qy")
 shape = SubResource("CircleShape2D_3mr5e")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1180027715]
-texture = ExtResource("2_i1kn5")
+position = Vector2(-1.0000002, 1)
+scale = Vector2(0.14500003, 0.146)
+texture = ExtResource("2_5g3qy")
 
 [node name="HorizontalTimer" type="Timer" parent="." unique_id=1025499906]
 wait_time = 0.5
