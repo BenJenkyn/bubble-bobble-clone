@@ -3,12 +3,12 @@
 [ext_resource type="Script" uid="uid://bjeg67tiw2fxv" path="res://scenes/main/Main.gd" id="1_ko0rf"]
 [ext_resource type="PackedScene" uid="uid://dmvjfwlpaxm6w" path="res://scenes/entities/player/Player.tscn" id="1_u1xfj"]
 [ext_resource type="Texture2D" uid="uid://c34bb11vgwujr" path="res://assets/images/bg0.png" id="2_nha0i"]
+[ext_resource type="Texture2D" uid="uid://kr3voof3syu2" path="res://assets_ai/raw/menu_screen.png" id="2_ostsq"]
 [ext_resource type="PackedScene" uid="uid://b4wg5nt0d4yvd" path="res://scenes/entities/enemies/Enemy.tscn" id="3_q24mn"]
+[ext_resource type="Texture2D" uid="uid://cbnu0ym6krgrc" path="res://assets_ai/raw/game_over_screen.png" id="4_3km4f"]
 [ext_resource type="Script" uid="uid://tuld7rhst07b" path="res://scenes/world/hud.gd" id="4_gyg6b"]
-[ext_resource type="Texture2D" uid="uid://uwj676wgr5ir" path="res://assets/images/life.png" id="5_dc040"]
-[ext_resource type="Texture2D" uid="uid://7balgeaityv3" path="res://assets/images/title.png" id="7_ostsq"]
 [ext_resource type="Texture2D" uid="uid://w51k41ko1mfs" path="res://assets/images/space0.png" id="8_3km4f"]
-[ext_resource type="Texture2D" uid="uid://dtv6qawloity3" path="res://assets/images/over.png" id="9_ostsq"]
+[ext_resource type="Texture2D" uid="uid://rsnppu2k4i4y" path="res://assets_ai/proccessed/heart_container.png" id="9_qkm1d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nha0i"]
 texture = ExtResource("2_nha0i")
@@ -1559,7 +1559,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("7_ostsq")
+texture = ExtResource("2_ostsq")
 
 [node name="TextureRect" type="TextureRect" parent="TitleScreen" unique_id=1268503164]
 anchors_preset = 7
@@ -1584,13 +1584,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("9_ostsq")
+texture = ExtResource("4_3km4f")
 
 [node name="Level1" type="Node2D" parent="." unique_id=675187073]
 
 [node name="Player" parent="Level1" unique_id=1807396977 instance=ExtResource("1_u1xfj")]
 z_index = 1
-position = Vector2(219, 88)
+position = Vector2(954, 559)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Level1" unique_id=606011237]
 z_index = 1
@@ -1631,16 +1631,20 @@ offset_bottom = 596.0
 
 [node name="heart1" type="Sprite2D" parent="Level1/HUD/HBoxContainer" unique_id=767414634]
 position = Vector2(30, 28)
-texture = ExtResource("5_dc040")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_qkm1d")
 
 [node name="heart2" type="Sprite2D" parent="Level1/HUD/HBoxContainer" unique_id=705540444]
 position = Vector2(78, 28)
-texture = ExtResource("5_dc040")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_qkm1d")
 
 [node name="heart3" type="Sprite2D" parent="Level1/HUD/HBoxContainer" unique_id=1052374735]
 position = Vector2(126, 28)
-texture = ExtResource("5_dc040")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_qkm1d")
 
 [node name="heart4" type="Sprite2D" parent="Level1/HUD/HBoxContainer" unique_id=1450479010]
 position = Vector2(174, 28)
-texture = ExtResource("5_dc040")
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("9_qkm1d")

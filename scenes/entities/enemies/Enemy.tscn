@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b4wg5nt0d4yvd"]
+
+[ext_resource type="Script" uid="uid://dmhdeqisd6iqi" path="res://scenes/entities/enemies/Enemy.gd" id="1_84gbo"]
+[ext_resource type="Texture2D" uid="uid://bl2ssd3divhn2" path="res://assets/images/robot000.png" id="1_dec3e"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_84gbo"]
+radius = 24.0
+height = 74.0
+
+[node name="Enemy" type="CharacterBody2D" unique_id=1755366680]
+script = ExtResource("1_84gbo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1778351778]
+shape = SubResource("CapsuleShape2D_84gbo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=646042983]
+texture = ExtResource("1_dec3e")

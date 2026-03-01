@@ -8,6 +8,9 @@ var bubble_scene = preload("res://scenes/entities/projectiles/Bubble.tscn")
 var last_direction := 1
 var is_invulnerable := false
 @onready var invulnerability_timer := $InvulnerabilityTimer
+@onready var player_animations := $PlayerAnimations
+@onready var walking_sprite := $WalkingSprite
+@onready var idle_sprite := $IdleSprite
 
 func _ready() -> void:
 	add_to_group("player")
@@ -26,6 +29,14 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction * SPEED
 		last_direction = direction
+		if(direction == -1):
+			walking_sprite.flip_h = true
+			player_animations.play("walk_right")
+		elif (direction == 1):
+			walking_sprite.flip_h = false
+			player_animations.play("walk_right")
+			
+			
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
