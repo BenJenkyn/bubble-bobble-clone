@@ -8,7 +8,8 @@ enum State {
 @export var speed: float = 80.0
 @export var gravity: float = 900.0
 var state: State = State.ACTIVE
-@onready var collision = $CollisionShape2D
+@onready var collision := $CollisionShape2D
+@onready var enemy_animations := $EnemyAnimations
 
 var direction: int = -1  # start moving left
 
@@ -27,12 +28,13 @@ func _physics_process(delta: float) -> void:
 	# Horizontal movement
 	velocity.x = direction * speed
 
+	enemy_animations.play("walking_animation")
 	move_and_slide()
 
 	# If we hit a wall, turn around
 	if is_on_wall():
 		direction *= -1
-		$Sprite2D.flip_h = direction > 0
+		$Sprite2D.flip_h = direction < 0
 		
 func trap():
 	state = State.TRAPPED
